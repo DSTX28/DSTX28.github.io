@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Daniel Shaheen's electrical engineering portfolio featuring circuit design, semiconductor technology, simulations, and engineering projects.">
+  <meta name="description" content="Daniel Shaheen | Electrical Engineering portfolio featuring semiconductor technology, circuit design, hardware testing, and engineering projects.">
   <title>Daniel Shaheen | Electrical Engineering Portfolio</title>
 
   <style>
@@ -61,17 +61,16 @@
       font-size: 1.2rem;
     }
 
-    .highlight {
-      color: var(--accent);
-      font-weight: bold;
-    }
-
     nav {
       margin-top: 30px;
     }
 
     a {
       color: var(--accent);
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     .button {
@@ -89,6 +88,7 @@
     .button:hover {
       transform: translateY(-2px);
       opacity: 0.9;
+      text-decoration: none;
     }
 
     .button.secondary {
@@ -110,7 +110,10 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(270px, 1fr)
+      );
       gap: 20px;
     }
 
@@ -119,6 +122,7 @@
       padding: 25px;
       border: 1px solid var(--border);
       border-radius: 14px;
+      margin-bottom: 15px;
     }
 
     .card h3 {
@@ -156,7 +160,10 @@
 
     .stats {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(180px, 1fr)
+      );
       gap: 15px;
       margin-top: 30px;
     }
@@ -205,6 +212,8 @@
 
 <body>
 
+<!-- HEADER -->
+
 <header>
   <h1>Daniel Shaheen</h1>
 
@@ -217,544 +226,559 @@
     Circuit Design • Engineering Research
   </p>
 
-  <p>
-    San Marcos, Texas
-  </p>
+  <p>San Marcos, Texas</p>
 
   <nav>
-    <a class="button" href="#projects">Explore Projects</a>
-    <a class="button secondary" href="#experience">Experience</a>
-    <a class="button secondary" href="#education">Education</a>
-    <a class="button secondary" href="#skills">Technical Skills</a>
-    <a class="button secondary" href="#contact">Contact</a>
+    <a class="button" href="#projects">
+      Explore Projects
+    </a>
+
+    <a class="button secondary" href="#experience">
+      Experience
+    </a>
+
+    <a class="button secondary" href="#education">
+      Education
+    </a>
+
+    <a class="button secondary" href="#skills">
+      Technical Skills
+    </a>
+
+    <a class="button secondary" href="#contact">
+      Contact
+    </a>
   </nav>
 </header>
 
 <main>
 
-  <!-- ABOUT ME -->
+<!-- ABOUT ME -->
 
-  <section id="about">
-    <h2>About Me</h2>
+<section id="about">
+  <h2>About Me</h2>
 
-    <p>
-      I am an Electrical Engineering student at Texas State
-      University pursuing a Bachelor of Science with a focus
-      on Micro and Nano Devices and Systems.
-    </p>
+  <p>
+    I am an Electrical Engineering student at Texas State
+    University pursuing a Bachelor of Science with a focus
+    on Micro and Nano Devices and Systems.
+  </p>
 
-    <p>
-      My engineering interests include semiconductor technology,
-      analog and digital circuit design, microelectronics,
-      hardware development, and engineering research.
-    </p>
+  <p>
+    My engineering interests include semiconductor
+    technology, analog and digital circuit design,
+    microelectronics, hardware development, and
+    engineering research.
+  </p>
 
-    <p>
-      Through academic projects, I have gained hands-on experience
-      designing, simulating, assembling, and testing electronic
-      circuits using LTspice, KiCad, oscilloscopes, digital
-      multimeters, and laboratory power supplies.
-    </p>
+  <p>
+    Through academic projects, I have gained hands-on
+    experience designing, simulating, assembling, and
+    testing electronic circuits using LTspice, KiCad,
+    oscilloscopes, digital multimeters, and laboratory
+    power supplies.
+  </p>
 
-    <p>
-      I previously attended Oklahoma State University, where
-      I earned President's List recognition and participated
-      in engineering organizations and technical activities.
-      I also studied abroad in Japan during Summer 2026.
-    </p>
+  <p>
+    I previously attended Oklahoma State University,
+    where I earned President's List recognition and
+    participated in engineering organizations.
+    I also studied abroad in Japan during Summer 2026.
+  </p>
 
-    <div class="stats">
-      <div class="stat">
-        <strong>3.6</strong>
-        <span>GPA Listed on Resume</span>
-      </div>
+  <div class="stats">
 
-      <div class="stat">
-        <strong>2028</strong>
-        <span>Expected Graduation</span>
-      </div>
-
-      <div class="stat">
-        <strong>2026</strong>
-        <span>Japan Study Abroad</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-
-  <section id="education">
-    <h2>Education</h2>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Texas State University</h3>
-
-        <p class="date">2026 – 2028</p>
-
-        <p>
-          Bachelor of Science in Electrical Engineering
-        </p>
-
-        <p>
-          <strong>Concentration:</strong>
-          Micro and Nano Devices and Systems
-        </p>
-
-        <p>
-          San Marcos, Texas
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Oklahoma State University</h3>
-
-        <p class="date">2024 – 2026</p>
-
-        <p>
-          Previous undergraduate engineering studies
-        </p>
-
-        <p>
-          <strong>Honors:</strong>
-          President's List — Spring and Fall 2025
-        </p>
-
-        <p>
-          <strong>Study Abroad:</strong>
-          Japan, Summer 2026
-        </p>
-
-        <p>
-          Stillwater, Oklahoma
-        </p>
-      </div>
-
+    <div class="stat">
+      <strong>3.6</strong>
+      <span>GPA Listed on Resume</span>
     </div>
 
-    <div class="card" style="margin-top:20px;">
-      <h3>Relevant Coursework</h3>
-
-      <span class="tag">Electrical Circuits I & II</span>
-      <span class="tag">Digital Logic</span>
-      <span class="tag">Microelectronics Manufacturing</span>
-      <span class="tag">Microprocessors</span>
-      <span class="tag">Data Structures</span>
-      <span class="tag">C & C++</span>
-      <span class="tag">UNIX</span>
-      <span class="tag">Database Systems</span>
-    </div>
-  </section>
-
-  <!-- ENGINEERING PROJECTS -->
-
-  <section id="projects">
-    <h2>Featured Engineering Projects</h2>
-
-    <p class="section-intro">
-      Selected academic engineering projects involving
-      circuit design, simulation, hardware validation,
-      technical documentation, and computational research.
-    </p>
-
-    <div class="grid">
-
-      <article class="card">
-        <h3>Regulated DC Power Supply Design</h3>
-
-        <p class="date">Fall 2025</p>
-
-        <p>
-          Designed and optimized a regulated DC power supply
-          using LTspice to evaluate voltage regulation,
-          ripple, transient response, and steady-state
-          performance.
-        </p>
-
-        <ul>
-          <li>
-            Constructed and tested a functional hardware
-            prototype.
-          </li>
-          <li>
-            Diagnosed noise and stability issues using
-            laboratory instruments.
-          </li>
-          <li>
-            Developed KiCad schematics, PCB documentation,
-            and a bill of materials.
-          </li>
-        </ul>
-
-        <span class="tag">LTspice</span>
-        <span class="tag">KiCad</span>
-        <span class="tag">PCB Design</span>
-        <span class="tag">Hardware Testing</span>
-      </article>
-
-      <article class="card">
-        <h3>Working Circuit Prototype</h3>
-
-        <p class="date">Fall 2025</p>
-
-        <p>
-          Collaborated in a two-person engineering team
-          to design, assemble, and demonstrate a
-          functioning electronic circuit.
-        </p>
-
-        <ul>
-          <li>
-            Translated circuit analysis into soldered
-            hardware implementation.
-          </li>
-          <li>
-            Measured and validated circuit signals
-            using an oscilloscope and DMM.
-          </li>
-          <li>
-            Documented troubleshooting findings
-            and performance results.
-          </li>
-        </ul>
-
-        <span class="tag">Circuit Design</span>
-        <span class="tag">Soldering</span>
-        <span class="tag">Oscilloscope</span>
-        <span class="tag">Teamwork</span>
-      </article>
-
-      <article class="card">
-        <h3>Wildfire AI Agent Research</h3>
-
-        <p>
-          Python-based wildfire simulation project
-          exploring environmental conditions,
-          numerical experiments, and AI-agent workflows.
-        </p>
-
-        <p>
-          Includes independently checked simulation
-          results and a framework for evaluating
-          AI-agent recommendations.
-        </p>
-
-        <span class="tag">Python</span>
-        <span class="tag">Simulation</span>
-        <span class="tag">AI Agents</span>
-
-        <p>
-          <a href="https://github.com/DSTX28/Univ-Projects">
-            Explore Project Repository →
-          </a>
-        </p>
-      </article>
-
-      <article class="card">
-        <h3>Digital Fuel Pump System</h3>
-
-        <p>
-          Engineering design project involving
-          development and documentation of a
-          digital fuel pump system.
-        </p>
-
-        <span class="tag">Engineering Design</span>
-        <span class="tag">System Development</span>
-        <span class="tag">Documentation</span>
-      </article>
-
-      <article class="card">
-        <h3>Band-Pass Filter Analysis</h3>
-
-        <p>
-          Circuit analysis project examining
-          frequency response, filter behavior,
-          signal characteristics, and
-          engineering calculations.
-        </p>
-
-        <span class="tag">Circuit Analysis</span>
-        <span class="tag">Signal Processing</span>
-      </article>
-
-      <article class="card">
-        <h3>Current Loop Voltage Converter</h3>
-
-        <p>
-          Circuit design project involving
-          a current-loop voltage conversion
-          system and laboratory evaluation.
-        </p>
-
-        <span class="tag">Electronics</span>
-        <span class="tag">Circuit Design</span>
-        <span class="tag">Laboratory Testing</span>
-      </article>
-
+    <div class="stat">
+      <strong>2028</strong>
+      <span>Expected Graduation</span>
     </div>
 
-    <p style="margin-top:25px;">
-      <a class="button"
-         href="https://github.com/DSTX28/Univ-Projects">
-        Explore All Engineering Projects
-      </a>
-    </p>
-  </section>
+    <div class="stat">
+      <strong>2026</strong>
+      <span>Japan Study Abroad</span>
+    </div>
 
-  <!-- PROFESSIONAL EXPERIENCE -->
+  </div>
+</section>
 
-  <section id="experience">
-    <h2>Professional Experience</h2>
+<!-- EDUCATION -->
+
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="grid">
 
     <div class="card">
-      <h3>Summer Lab Technician</h3>
+      <h3>Texas State University</h3>
 
-      <p class="date">June 2023 – August 2023</p>
+      <p class="date">2026 – 2028</p>
 
       <p>
-        <strong>
-          North Water District Lab Services
-        </strong>
+        Bachelor of Science in Electrical Engineering
       </p>
 
       <p>
-        The Woodlands, Texas
+        <strong>Concentration:</strong>
+        Micro and Nano Devices and Systems
+      </p>
+
+      <p>San Marcos, Texas</p>
+    </div>
+
+    <div class="card">
+      <h3>Oklahoma State University</h3>
+
+      <p class="date">2024 – 2026</p>
+
+      <p>
+        Previous undergraduate engineering studies
+      </p>
+
+      <p>
+        <strong>Honors:</strong>
+        President's List — Spring and Fall 2025
+      </p>
+
+      <p>
+        <strong>Study Abroad:</strong>
+        Japan, Summer 2026
+      </p>
+
+      <p>Stillwater, Oklahoma</p>
+    </div>
+
+  </div>
+
+  <div class="card">
+    <h3>Relevant Coursework</h3>
+
+    <span class="tag">Electrical Circuits I & II</span>
+    <span class="tag">Digital Logic</span>
+    <span class="tag">Microelectronics Manufacturing I</span>
+    <span class="tag">Microprocessors</span>
+    <span class="tag">Data Structures</span>
+    <span class="tag">C & C++</span>
+    <span class="tag">UNIX</span>
+    <span class="tag">Database Systems Development</span>
+  </div>
+</section>
+
+<!-- ENGINEERING PROJECTS -->
+
+<section id="projects">
+  <h2>Featured Engineering Projects</h2>
+
+  <p class="section-intro">
+    Selected engineering projects involving circuit
+    design, simulation, hardware validation, technical
+    documentation, and computational research.
+  </p>
+
+  <div class="grid">
+
+    <article class="card">
+      <h3>Regulated DC Power Supply Design</h3>
+
+      <p class="date">Fall 2025</p>
+
+      <p>
+        Designed and optimized a regulated DC power
+        supply using LTspice to evaluate voltage
+        regulation, ripple, transient response,
+        and steady-state performance.
       </p>
 
       <ul>
         <li>
-          Processed more than 200 water samples
-          per day while following laboratory
-          quality-control and compliance procedures.
+          Constructed and tested a functional
+          hardware prototype.
         </li>
 
         <li>
-          Maintained accurate sample labeling,
-          packaging, inventory documentation,
-          and traceability records.
+          Diagnosed noise and stability issues
+          using laboratory instruments.
         </li>
 
         <li>
-          Followed standardized operating
-          procedures in a high-volume
-          laboratory environment.
+          Developed KiCad schematics, PCB
+          documentation, and a bill of materials.
         </li>
       </ul>
 
-      <span class="tag">Laboratory Operations</span>
-      <span class="tag">Quality Control</span>
+      <span class="tag">LTspice</span>
+      <span class="tag">KiCad</span>
+      <span class="tag">PCB Design</span>
+      <span class="tag">Hardware Testing</span>
+    </article>
+
+    <article class="card">
+      <h3>Working Circuit Prototype</h3>
+
+      <p class="date">Fall 2025</p>
+
+      <p>
+        Collaborated in a two-person engineering
+        team to design, assemble, and demonstrate
+        a functioning electronic circuit.
+      </p>
+
+      <ul>
+        <li>
+          Translated circuit analysis into
+          soldered hardware implementation.
+        </li>
+
+        <li>
+          Measured and validated circuit
+          signals using an oscilloscope
+          and digital multimeter.
+        </li>
+
+        <li>
+          Documented troubleshooting findings
+          and performance results.
+        </li>
+      </ul>
+
+      <span class="tag">Circuit Design</span>
+      <span class="tag">Soldering</span>
+      <span class="tag">Oscilloscope</span>
+      <span class="tag">Teamwork</span>
+    </article>
+
+    <article class="card">
+      <h3>Wildfire AI Agent Research</h3>
+
+      <p>
+        Python-based wildfire simulation
+        exploring environmental conditions,
+        numerical experiments, and AI-agent
+        workflows.
+      </p>
+
+      <p>
+        Includes independently checked simulation
+        results and a framework for evaluating
+        AI-agent recommendations.
+      </p>
+
+      <span class="tag">Python</span>
+      <span class="tag">Simulation</span>
+      <span class="tag">AI Agents</span>
+
+      <p>
+        <a href="https://github.com/DSTX28/Univ-Projects">
+          Explore Project Repository →
+        </a>
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Digital Fuel Pump System</h3>
+
+      <p>
+        Engineering design project involving
+        development and documentation of
+        a digital fuel pump system.
+      </p>
+
+      <span class="tag">Engineering Design</span>
+      <span class="tag">System Development</span>
       <span class="tag">Documentation</span>
-      <span class="tag">Compliance</span>
-    </div>
-  </section>
+    </article>
 
-  <!-- TECHNICAL SKILLS -->
+    <article class="card">
+      <h3>Band-Pass Filter Analysis</h3>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
+      <p>
+        Circuit analysis project examining
+        frequency response, filter behavior,
+        signal characteristics, and
+        engineering calculations.
+      </p>
 
-    <div class="grid">
+      <span class="tag">Circuit Analysis</span>
+      <span class="tag">Signal Processing</span>
+    </article>
 
-      <div class="card">
-        <h3>Programming</h3>
+    <article class="card">
+      <h3>Current Loop Voltage Converter</h3>
 
-        <span class="tag">Python</span>
-        <span class="tag">C</span>
-        <span class="tag">C++</span>
-        <span class="tag">SystemVerilog</span>
-        <span class="tag">UNIX/Linux</span>
-        <span class="tag">MATLAB</span>
-      </div>
+      <p>
+        Circuit design project involving
+        a current-loop voltage conversion
+        system and laboratory evaluation.
+      </p>
 
-      <div class="card">
-        <h3>Engineering Software</h3>
+      <span class="tag">Electronics</span>
+      <span class="tag">Circuit Design</span>
+      <span class="tag">Laboratory Testing</span>
+    </article>
 
-        <span class="tag">LTspice</span>
-        <span class="tag">KiCad</span>
-        <span class="tag">AutoCAD</span>
-        <span class="tag">SolidWorks</span>
-        <span class="tag">Microsoft Excel</span>
-      </div>
+  </div>
 
-      <div class="card">
-        <h3>Hardware & Electronics</h3>
+  <p style="margin-top:25px;">
+    <a class="button"
+       href="https://github.com/DSTX28/Univ-Projects">
+      Explore All Engineering Projects
+    </a>
+  </p>
+</section>
 
-        <span class="tag">Analog Circuits</span>
-        <span class="tag">Digital Circuits</span>
-        <span class="tag">PCB Design</span>
-        <span class="tag">Schematic Capture</span>
-        <span class="tag">Voltage Regulation</span>
-        <span class="tag">Circuit Debugging</span>
-      </div>
+<!-- PROFESSIONAL EXPERIENCE -->
 
-      <div class="card">
-        <h3>Laboratory Equipment</h3>
+<section id="experience">
+  <h2>Professional Experience</h2>
 
-        <span class="tag">Oscilloscope</span>
-        <span class="tag">Digital Multimeter</span>
-        <span class="tag">Function Generator</span>
-        <span class="tag">Bench Power Supply</span>
-        <span class="tag">Circuit Prototyping</span>
-        <span class="tag">Hardware Validation</span>
-      </div>
+  <div class="card">
+    <h3>Summer Lab Technician</h3>
 
-    </div>
-  </section>
+    <p class="date">June 2023 – August 2023</p>
 
-  <!-- HONORS -->
+    <p>
+      <strong>North Water District Lab Services</strong>
+    </p>
 
-  <section id="honors">
-    <h2>Honors & Certifications</h2>
+    <p>The Woodlands, Texas</p>
 
-    <div class="grid">
+    <ul>
+      <li>
+        Processed more than 200 water samples per
+        day while following laboratory quality-control,
+        compliance, and standard operating procedures.
+      </li>
 
-      <div class="card">
-        <h3>President's List</h3>
+      <li>
+        Maintained accurate labeling, packaging,
+        inventory documentation, compliance logs,
+        and traceability records.
+      </li>
 
-        <p>
-          Oklahoma State University
-        </p>
+      <li>
+        Supported high-volume laboratory operations
+        through standardized testing workflows
+        and documentation practices.
+      </li>
+    </ul>
 
-        <p class="date">
-          Spring 2025 & Fall 2025
-        </p>
-      </div>
+    <span class="tag">Laboratory Operations</span>
+    <span class="tag">Quality Control</span>
+    <span class="tag">Documentation</span>
+    <span class="tag">Compliance</span>
+  </div>
+</section>
 
-      <div class="card">
-        <h3>SolidWorks Certification</h3>
+<!-- COMPLETE TECHNICAL SKILLS -->
 
-        <p>
-          Certified in SolidWorks,
-          as listed on my engineering resume.
-        </p>
-      </div>
+<section id="skills">
+  <h2>Technical Skills</h2>
 
-    </div>
-  </section>
+  <p class="section-intro">
+    Hardware, programming, engineering software,
+    laboratory instrumentation, and technical tools.
+  </p>
 
-  <!-- LEADERSHIP -->
+  <div class="card">
+    <h3>Hardware & Circuit Design</h3>
 
-  <section id="leadership">
-    <h2>Leadership & Activities</h2>
+    <span class="tag">Analog Circuit Design</span>
+    <span class="tag">Digital Circuit Design</span>
+    <span class="tag">Power Supplies</span>
+    <span class="tag">Voltage Regulation</span>
+    <span class="tag">Signal Measurement</span>
+    <span class="tag">Circuit Debugging</span>
+    <span class="tag">PCB Design</span>
+    <span class="tag">Schematic Capture</span>
+    <span class="tag">Hardware Validation & Testing</span>
+  </div>
+
+  <div class="card">
+    <h3>Programming</h3>
+
+    <span class="tag">Python</span>
+    <span class="tag">C</span>
+    <span class="tag">C++</span>
+    <span class="tag">SystemVerilog</span>
+    <span class="tag">UNIX/Linux</span>
+  </div>
+
+  <div class="card">
+    <h3>Engineering Software</h3>
+
+    <span class="tag">LTspice</span>
+    <span class="tag">KiCad</span>
+    <span class="tag">MATLAB</span>
+    <span class="tag">AutoCAD</span>
+    <span class="tag">SolidWorks (Certified)</span>
+  </div>
+
+  <div class="card">
+    <h3>Laboratory Equipment</h3>
+
+    <span class="tag">Oscilloscope</span>
+    <span class="tag">Function Generator</span>
+    <span class="tag">Digital Multimeter</span>
+    <span class="tag">Bench Power Supply</span>
+  </div>
+
+  <div class="card">
+    <h3>Productivity & Additional Software</h3>
+
+    <span class="tag">Microsoft Excel</span>
+    <span class="tag">Microsoft Word</span>
+    <span class="tag">Microsoft PowerPoint</span>
+    <span class="tag">Google Workspace</span>
+    <span class="tag">Claude 101</span>
+  </div>
+</section>
+
+<!-- HONORS -->
+
+<section id="honors">
+  <h2>Honors & Certifications</h2>
+
+  <div class="grid">
 
     <div class="card">
-      <h3>Engineering Organizations</h3>
+      <h3>President's List</h3>
 
-      <ul>
-        <li>
-          Society of Hispanic Professional Engineers
-          (SHPE) — 2026
-        </li>
+      <p>Oklahoma State University</p>
 
-        <li>
-          Robotics Automation Society — 2026
-        </li>
-
-        <li>
-          Design & Fabrication Club — 2026
-        </li>
-
-        <li>
-          Data Analytics Club,
-          Oklahoma State University — 2025–2026
-        </li>
-
-        <li>
-          Cybersecurity Club,
-          Oklahoma State University — Spring 2025
-        </li>
-
-        <li>
-          Rowing Club,
-          Oklahoma State University — 2024–2025
-        </li>
-      </ul>
+      <p class="date">
+        Spring 2025 & Fall 2025
+      </p>
     </div>
-  </section>
-
-  <!-- INTERNATIONAL EXPERIENCE -->
-
-  <section id="international">
-    <h2>International Experience</h2>
 
     <div class="card">
-      <h3>Engineering Study Abroad — Japan</h3>
-
-      <p class="date">Summer 2026</p>
+      <h3>SolidWorks Certification</h3>
 
       <p>
-        Participated in an international study-abroad
-        experience through Oklahoma State University's
-        School of Engineering.
+        SolidWorks certification,
+        as listed on my engineering resume.
       </p>
-
-      <p>
-        Gained exposure to a different cultural
-        environment while developing international
-        experience and adaptability.
-      </p>
-
-      <span class="tag">Japan</span>
-      <span class="tag">Study Abroad</span>
-      <span class="tag">International Experience</span>
     </div>
-  </section>
 
-  <!-- COMMUNITY -->
+  </div>
+</section>
 
-  <section id="community">
-    <h2>Community Involvement</h2>
+<!-- LEADERSHIP -->
 
-    <div class="card">
-      <p>
-        Volunteer experience with:
-      </p>
+<section id="leadership">
+  <h2>Leadership & Activities</h2>
 
-      <span class="tag">Habitat for Humanity</span>
-      <span class="tag">Houston Food Bank</span>
-      <span class="tag">Panther Creek Horse Ranch</span>
-      <span class="tag">Conroe Crisis Center</span>
-    </div>
-  </section>
+  <div class="card">
+    <h3>Engineering & Student Organizations</h3>
 
-  <!-- CONTACT -->
+    <ul>
+      <li>
+        Society of Hispanic Professional Engineers
+        (SHPE) — 2026
+      </li>
 
-  <section id="contact">
-    <h2>Connect With Me</h2>
+      <li>
+        Robotics Automation Society — 2026
+      </li>
 
-    <div class="card">
-      <h3>Interested in My Engineering Work?</h3>
+      <li>
+        Design & Fabrication Club — 2026
+      </li>
 
-      <p>
-        I welcome opportunities to connect with
-        engineering professionals, researchers,
-        and organizations working in semiconductor
-        technology, electronics, and hardware development.
-      </p>
+      <li>
+        Data Analytics Club,
+        Oklahoma State University — 2025–2026
+      </li>
 
-      <p>
-        <strong>Location:</strong>
-        San Marcos, Texas
-      </p>
+      <li>
+        Cybersecurity Club,
+        Oklahoma State University — Spring 2025
+      </li>
 
-      <p>
-        <strong>GitHub:</strong>
-        DSTX28
-      </p>
+      <li>
+        Rowing Club,
+        Oklahoma State University — 2024–2025
+      </li>
+    </ul>
+  </div>
+</section>
 
-      <a class="button"
-         href="https://github.com/DSTX28">
-        Visit My GitHub
-      </a>
+<!-- INTERNATIONAL EXPERIENCE -->
 
-      <a class="button secondary"
-         href="https://github.com/DSTX28/Univ-Projects">
-        View Engineering Projects
-      </a>
-    </div>
-  </section>
+<section id="international">
+  <h2>International Experience</h2>
+
+  <div class="card">
+    <h3>Engineering Study Abroad — Japan</h3>
+
+    <p class="date">Summer 2026</p>
+
+    <p>
+      Participated in an international study-abroad
+      experience through Oklahoma State University's
+      School of Engineering.
+    </p>
+
+    <span class="tag">Japan</span>
+    <span class="tag">Study Abroad</span>
+    <span class="tag">International Experience</span>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+
+<section id="community">
+  <h2>Community Involvement</h2>
+
+  <div class="card">
+    <p>Community volunteer involvement:</p>
+
+    <span class="tag">Habitat for Humanity</span>
+    <span class="tag">Houston Food Bank</span>
+    <span class="tag">Panther Creek Horse Ranch</span>
+    <span class="tag">Conroe Crisis Center</span>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+  <h2>Connect With Me</h2>
+
+  <div class="card">
+    <h3>Interested in My Engineering Work?</h3>
+
+    <p>
+      I welcome opportunities to connect with
+      engineering professionals, researchers,
+      and organizations working in semiconductor
+      technology, electronics, and hardware development.
+    </p>
+
+    <p>
+      <strong>Location:</strong>
+      San Marcos, Texas
+    </p>
+
+    <p>
+      <strong>GitHub:</strong>
+      DSTX28
+    </p>
+
+    <a class="button"
+       href="https://github.com/DSTX28">
+      Visit My GitHub
+    </a>
+
+    <a class="button secondary"
+       href="https://github.com/DSTX28/Univ-Projects">
+      View Engineering Projects
+    </a>
+  </div>
+</section>
 
 </main>
 
@@ -774,3 +798,4 @@
 
 </body>
 </html>
+
