@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Electrical Engineering portfolio featuring circuit design, simulation, and research projects.">
+  <title>Daniel Shaheen | Electrical Engineering Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #152238;
+      --text: #f3f6fc;
+      --muted: #aabbd1;
+      --accent: #65c8ff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      line-height: 1.65;
+    }
+    header {
+      padding: 90px 20px 75px;
+      text-align: center;
+      background: linear-gradient(135deg, #142c50, #0b1220);
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 10px; }
+    h2 { color: var(--accent); }
+    p { color: var(--muted); }
+    .subtitle { font-size: 1.2rem; }
+    nav { margin-top: 30px; }
+    a { color: var(--accent); }
+    .button {
+      display: inline-block;
+      padding: 11px 19px;
+      margin: 6px;
+      background: var(--accent);
+      color: #08121f;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .button.secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+    main { max-width: 1050px; margin: auto; padding: 35px 20px; }
+    section { margin: 35px 0 65px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--panel);
+      padding: 25px;
+      border: 1px solid #2c405c;
+      border-radius: 14px;
+    }
+    .card h3 { margin-top: 0; }
+    .tag {
+      display: inline-block;
+      background: #233b56;
+      color: #c9eaff;
+      border-radius: 5px;
+      padding: 4px 9px;
+      margin: 4px 3px 4px 0;
+      font-size: .85rem;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #2c405c;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Daniel Shaheen</h1>
+  <p class="subtitle">Electrical Engineering Student | Texas State University</p>
+  <p>Circuits • Semiconductor Technology • Simulation • Engineering Research</p>
+  <nav>
+    <a class="button" href="#projects">Explore Projects</a>
+    <a class="button secondary" href="https://github.com/DSTX28/Univ-Projects">GitHub Repository</a>
+    <a class="button secondary" href="#about">About Me</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an Electrical Engineering student at Texas State University
+      with an interest in micro- and nanoelectronic devices,
+      semiconductor technology, circuit design, and engineering research.
+      My academic projects involve circuit prototyping, simulation,
+      technical documentation, and experimental analysis.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Engineering Projects</h2>
+    <div class="grid">
+
+      <article class="card">
+        <h3>Wildfire AI Agent Research</h3>
+        <p>
+          Python-based wildfire simulation exploring environmental
+          conditions, numerical experiments, AI-agent workflows,
+          and independent result verification.
+        </p>
+        <span class="tag">Python</span>
+        <span class="tag">Simulation</span>
+        <span class="tag">AI Agents</span>
+        <p><a href="https://github.com/DSTX28/Univ-Projects/blob/main/Wildfire_AI_Agent_Technical_Report.pdf">View Technical Report →</a></p>
+      </article>
+
+      <article class="card">
+        <h3>Regulated DC Power Supply</h3>
+        <p>
+          Designed and simulated a regulated DC power supply,
+          evaluating voltage regulation, ripple, transient response,
+          and prototype performance.
+        </p>
+        <span class="tag">LTspice</span>
+        <span class="tag">KiCad</span>
+        <span class="tag">Circuit Testing</span>
+      </article>
+
+      <article class="card">
+        <h3>Digital Fuel Pump System</h3>
+        <p>
+          Engineering design project involving the development
+          and documentation of a digital fuel pump system.
+        </p>
+        <span class="tag">Engineering Design</span>
+        <span class="tag">Technical Documentation</span>
+      </article>
+
+      <article class="card">
+        <h3>Band-Pass Filter Analysis</h3>
+        <p>
+          Circuit analysis project focused on filter behavior,
+          signal response, and engineering calculations.
+        </p>
+        <span class="tag">Circuit Analysis</span>
+        <span class="tag">Signal Processing</span>
+      </article>
+
+      <article class="card">
+        <h3>Current Loop Voltage Converter</h3>
+        <p>
+          Circuits design project involving a current-loop
+          voltage-conversion system and laboratory evaluation.
+        </p>
+        <span class="tag">Electronics</span>
+        <span class="tag">Circuit Design</span>
+      </article>
+
+      <article class="card">
+        <h3>Explore More Projects</h3>
+        <p>
+          Browse additional engineering reports, source code,
+          notebooks, and project documentation on GitHub.
+        </p>
+        <a href="https://github.com/DSTX28/Univ-Projects">View All Projects →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="card">
+      <span class="tag">Python</span>
+      <span class="tag">MATLAB</span>
+      <span class="tag">LTspice</span>
+      <span class="tag">KiCad</span>
+      <span class="tag">Oscilloscope</span>
+      <span class="tag">Digital Multimeter</span>
+      <span class="tag">Function Generator</span>
+      <span class="tag">Circuit Prototyping</span>
+      <span class="tag">Technical Reporting</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Connect</h2>
+    <p>Interested in my engineering work? Explore my projects and technical documentation.</p>
+    <a class="button" href="https://github.com/DSTX28">Visit My GitHub</a>
+  </section>
+</main>
+
+<footer>
+  Daniel Shaheen | Electrical Engineering Portfolio
+</footer>
+
+</body>
+</html>
