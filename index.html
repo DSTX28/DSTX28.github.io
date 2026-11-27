@@ -207,6 +207,31 @@
         padding: 20px;
       }
     }
+    .card img.shot {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      margin: 6px 0 12px;
+      background: #fff;
+    }
+
+    .card.feature {
+      border-color: #3b6a9a;
+    }
+
+    .links a {
+      margin-right: 14px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .kicker {
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: bold;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
   </style>
 </head>
 
@@ -222,8 +247,8 @@
   </p>
 
   <p>
-    Micro & Nano Devices • Semiconductor Technology •
-    Circuit Design • Engineering Research
+    Semiconductor Process Engineering • Micro &amp; Nano Fabrication •
+        Yield &amp; SPC • Circuit Design
   </p>
 
   <p>San Marcos, Texas</p>
@@ -244,6 +269,9 @@
     <a class="button secondary" href="#skills">
       Technical Skills
     </a>
+        <a class="button secondary" href="https://github.com/DSTX28">
+          GitHub
+        </a>
   </nav>
 </header>
 
@@ -268,6 +296,13 @@
   </p>
 
   <p>
+    I am seeking internships in <strong>semiconductor process,
+    equipment, and yield engineering</strong>. My recent projects model
+    front-end fab steps from first principles and apply statistical
+    process control to real production data.
+  </p>
+
+  <p>
     Through academic projects, I have gained hands-on
     experience designing, simulating, assembling, and
     testing electronic circuits using LTspice, KiCad,
@@ -278,7 +313,7 @@
   <div class="stats">
     <div class="stat">
       <strong>3.6</strong>
-      <span>GPA Listed on Resume</span>
+      <span>GPA</span>
     </div>
 
     <div class="stat">
@@ -288,54 +323,114 @@
   </div>
 </section>
 
-<!-- EDUCATION -->
-
-<section id="education">
-  <h2>Education</h2>
-
-  <div class="card">
-    <h3>Texas State University</h3>
-
-    <p class="date">2026 – 2028</p>
-
-    <p>
-      Bachelor of Science in Electrical Engineering
-    </p>
-
-    <p>
-      <strong>Concentration:</strong>
-      Micro and Nano Devices and Systems
-    </p>
-
-    <p>San Marcos, Texas</p>
-  </div>
-
-  <div class="card">
-    <h3>Relevant Coursework</h3>
-
-    <span class="tag">Electrical Circuits I & II</span>
-    <span class="tag">Digital Logic</span>
-    <span class="tag">Microelectronics Manufacturing I</span>
-    <span class="tag">Microprocessors</span>
-    <span class="tag">Data Structures</span>
-    <span class="tag">C & C++</span>
-    <span class="tag">UNIX</span>
-    <span class="tag">Database Systems Development</span>
-  </div>
-</section>
-
 <!-- ENGINEERING PROJECTS -->
 
 <section id="projects">
   <h2>Featured Engineering Projects</h2>
 
   <p class="section-intro">
-    Selected engineering projects involving circuit
-    design, simulation, hardware validation, technical
-    documentation, and computational research.
+    Semiconductor process modeling, yield analysis on real fab data,
+    and circuit design validated on the bench.
   </p>
 
-  <div class="grid">
+      <div class="grid">
+
+        <article class="card feature">
+          <p class="kicker">Featured · Process modeling</p>
+          <h3>fabsim: Silicon Process Simulator</h3>
+          <img class="shot" src="assets/oxide-colour-chart.jpg"
+               alt="Oxide colour chart computed from thin-film optics">
+          <p>
+            Python models of front-end fab steps: Deal-Grove oxidation,
+            predeposition and drive-in diffusion (Crank-Nicolson solver),
+            ion implantation, and sheet resistance. Run a wafer through a
+            process traveler to get junction depth, R<sub>s</sub>, and oxide thickness.
+          </p>
+          <ul>
+            <li>Every model validated against published data or analytic
+              solutions: 32 automated tests run on each commit.</li>
+            <li>Computes the oxide colour chart from thin-film optics, matching
+              the standard chart within ~10 nm.</li>
+            <li>Interactive browser furnace: set a recipe, watch the wafer colour change.</li>
+          </ul>
+          <span class="tag">Python</span>
+          <span class="tag">Device Physics</span>
+          <span class="tag">Numerical Methods</span>
+          <span class="tag">Testing / CI</span>
+          <p class="links">
+            <a href="https://dstx28.github.io/fabsim/">Live demo →</a>
+            <a href="https://github.com/DSTX28/fabsim">Code →</a>
+          </p>
+        </article>
+
+        <article class="card feature">
+          <p class="kicker">Featured · Yield &amp; SPC</p>
+          <h3>Yield Excursion Analysis on Real Fab Data</h3>
+          <img class="shot" src="assets/yield-confounding.jpg"
+               alt="Sensor significance versus correlation with time">
+          <p>
+            SPC and yield analysis of 1,567 production lots and 590 in-line
+            sensors from a real semiconductor line (UCI SECOM).
+          </p>
+          <ul>
+            <li>p-chart revealed a yield ramp: fail rate 12.9 % → 4.1 % (p = 2×10⁻⁹).</li>
+            <li>Showed 7 of the top 10 "predictive" sensors were time trends;
+              12 sensors survive a within-week stratified test.</li>
+            <li>Demonstrated shuffled cross-validation overstates model
+              performance (AUC 0.77 → 0.54–0.58 walk-forward).</li>
+          </ul>
+          <span class="tag">SPC</span>
+          <span class="tag">Statistics</span>
+          <span class="tag">pandas / scikit-learn</span>
+          <p class="links">
+            <a href="https://github.com/DSTX28/secom-yield-analysis">Analysis &amp; code →</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>4–20 mA Current-Loop Converter</h3>
+          <p class="date">Fall 2025</p>
+          <img class="shot" src="assets/current-loop-bench.jpg"
+               alt="Bench test station with DMM reading 4.6486 V">
+          <p>
+            Designed, built, and bench-tested an LM358 transimpedance
+            interface converting industrial 4–20 mA sensor signals to 0–5 V.
+          </p>
+          <ul>
+            <li>Decomposed measured error: −6.0 % gain, −64 mV offset,
+              only 0.7 % full-scale nonlinearity.</li>
+            <li>Showed a two-point calibration cuts error from 7 % to 1.2 % FS.</li>
+          </ul>
+          <span class="tag">Op-Amps</span>
+          <span class="tag">Breadboard Prototyping</span>
+          <span class="tag">Error Analysis</span>
+          <p class="links">
+            <a href="https://github.com/DSTX28/Univ-Projects/tree/main/4-20mA-current-loop-converter">Project →</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Band-Pass Filter Characterization &amp; Design</h3>
+          <p class="date">Spring 2026</p>
+          <img class="shot" src="assets/bandpass-response.jpg"
+               alt="Measured, estimated and LTspice magnitude responses">
+          <p>
+            Characterized an unknown part from measured frequency-response data,
+            fitted a four-pole transfer function, and designed a standard-value
+            active replacement.
+          </p>
+          <ul>
+            <li>20.5 dB peak gain, ±40 dB/dec skirts, 2.4 dB RMS model error.</li>
+            <li>Explained high-frequency divergence via op-amp gain-bandwidth.</li>
+          </ul>
+          <span class="tag">MATLAB</span>
+          <span class="tag">LTspice</span>
+          <span class="tag">Filter Design</span>
+          <p class="links">
+            <a href="https://github.com/DSTX28/Univ-Projects/tree/main/bandpass-filter-design">Project →</a>
+          </p>
+        </article>
+
 
     <article class="card">
       <h3>Regulated DC Power Supply Design</h3>
@@ -408,19 +503,17 @@
     </article>
 
     <article class="card">
-      <h3>Wildfire AI Agent Research</h3>
+      <h3>Wildfire Intervention Study</h3>
 
       <p>
-        Python-based wildfire simulation
-        exploring environmental conditions,
-        numerical experiments, and AI-agent
-        workflows.
+        Controlled Monte Carlo experiment (fixed seeds, 100 runs × 7
+            options) identifying a crossing-closure plan that cuts simulated
+            losses by 94 %.
       </p>
 
       <p>
-        Includes independently checked simulation
-        results and a framework for evaluating
-        AI-agent recommendations.
+        Also critiqued an AI agent's flawed experimental reasoning
+            (uncontrolled seeds, incomplete comparison).
       </p>
 
       <span class="tag">Python</span>
@@ -438,42 +531,16 @@
       <h3>Digital Fuel Pump System</h3>
 
       <p>
-        Engineering design project involving
-        development and documentation of
-        a digital fuel pump system.
-      </p>
+            Modular SystemVerilog datapath (divide, multiply, registered
+            digit split, seven-segment decoders) verified with a testbench.
+          </p>
 
       <span class="tag">Engineering Design</span>
       <span class="tag">System Development</span>
       <span class="tag">Documentation</span>
-    </article>
-
-    <article class="card">
-      <h3>Band-Pass Filter Analysis</h3>
-
-      <p>
-        Circuit analysis project examining
-        frequency response, filter behavior,
-        signal characteristics, and
-        engineering calculations.
-      </p>
-
-      <span class="tag">Circuit Analysis</span>
-      <span class="tag">Signal Processing</span>
-    </article>
-
-    <article class="card">
-      <h3>Current Loop Voltage Converter</h3>
-
-      <p>
-        Circuit design project involving
-        a current-loop voltage conversion
-        system and laboratory evaluation.
-      </p>
-
-      <span class="tag">Electronics</span>
-      <span class="tag">Circuit Design</span>
-      <span class="tag">Laboratory Testing</span>
+          <p class="links">
+            <a href="https://github.com/DSTX28/Univ-Projects/tree/main/digital-fuel-pump-systemverilog">Project →</a>
+          </p>
     </article>
 
   </div>
@@ -481,10 +548,12 @@
   <p style="margin-top:25px;">
     <a class="button"
        href="https://github.com/DSTX28/Univ-Projects">
-      Explore All Engineering Projects
+      All Course Projects on GitHub
     </a>
   </p>
 </section>
+
+
 
 <!-- PROFESSIONAL EXPERIENCE -->
 
@@ -539,6 +608,18 @@
     laboratory instrumentation, and technical tools.
   </p>
 
+      <div class="card">
+        <h3>Process &amp; Yield Engineering</h3>
+        <span class="tag">Thermal Oxidation (Deal-Grove)</span>
+        <span class="tag">Dopant Diffusion &amp; Implantation Modeling</span>
+        <span class="tag">Sheet Resistance / Four-Point Probe</span>
+        <span class="tag">Statistical Process Control (I-MR, p-charts)</span>
+        <span class="tag">Western Electric Rules</span>
+        <span class="tag">Yield Excursion Analysis</span>
+        <span class="tag">Monte Carlo &amp; Controlled Experiments</span>
+        <span class="tag">Measurement Error Analysis &amp; Calibration</span>
+      </div>
+
   <div class="card">
     <h3>Hardware & Circuit Design</h3>
 
@@ -561,6 +642,9 @@
     <span class="tag">C++</span>
     <span class="tag">SystemVerilog</span>
     <span class="tag">UNIX/Linux</span>
+        <span class="tag">NumPy / SciPy / pandas</span>
+        <span class="tag">scikit-learn</span>
+        <span class="tag">Git &amp; GitHub Actions (CI)</span>
   </div>
 
   <div class="card">
@@ -589,7 +673,42 @@
     <span class="tag">Microsoft Word</span>
     <span class="tag">Microsoft PowerPoint</span>
     <span class="tag">Google Workspace</span>
-    <span class="tag">Claude 101</span>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="card">
+    <h3>Texas State University</h3>
+
+    <p class="date">2026 – 2028</p>
+
+    <p>
+      Bachelor of Science in Electrical Engineering
+    </p>
+
+    <p>
+      <strong>Concentration:</strong>
+      Micro and Nano Devices and Systems
+    </p>
+
+    <p>San Marcos, Texas</p>
+  </div>
+
+  <div class="card">
+    <h3>Relevant Coursework</h3>
+
+    <span class="tag">Electrical Circuits I & II</span>
+    <span class="tag">Digital Logic</span>
+    <span class="tag">Microelectronics Manufacturing I</span>
+    <span class="tag">Microprocessors</span>
+    <span class="tag">Data Structures</span>
+    <span class="tag">C & C++</span>
+    <span class="tag">UNIX</span>
+    <span class="tag">Database Systems Development</span>
   </div>
 </section>
 
@@ -709,7 +828,7 @@
   </p>
 
   <p>
-    © 2026 Daniel Shaheen
+    <a href="https://github.com/DSTX28">GitHub</a> · © 2026 Daniel Shaheen
   </p>
 </footer>
 
